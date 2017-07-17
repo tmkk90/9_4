@@ -1,12 +1,7 @@
-﻿function drawTree (rows) {
-	for (i=0; i<=rows; i++){
-	var star ="";
-		for (j=0; j<=i; j++) {
-		star += '*';
-		}
-	console.log(star)
-	}
+﻿var getButtons = document.getElementsByClassName('button');
+console.log(getButtons);
+console.log(getButtons.length);
+
+for (i=0; i<getButtons.length; i++) {
+	console.log(getButtons[i].innerText);
 }
-
-
-drawTree(4) 
